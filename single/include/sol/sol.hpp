@@ -561,6 +561,7 @@
 
 // end of sol/version.hpp
 
+#include <unordered_map>
 #include <utility>
 #include <type_traits>
 #include <string_view>
