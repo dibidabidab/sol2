@@ -21411,12 +21411,12 @@ namespace sol {
 						ifx(meta_function::length, f);
 					}
 				}
-				if (fx(meta_function::to_string)) {
-					if constexpr (is_to_stringable<T>::value) {
-						auto f = &detail::static_trampoline<&default_to_string<T>>;
-						ifx(meta_function::to_string, f);
-					}
-				}
+//				if (fx(meta_function::to_string)) {
+//					if constexpr (is_to_stringable<T>::value) {
+//						auto f = &detail::static_trampoline<&default_to_string<T>>;
+//						ifx(meta_function::to_string, f);
+//					}
+//				}
 				if (fx(meta_function::call_function)) {
 					if constexpr (meta::has_deducible_signature<T>::value) {
 						auto f = &c_call<decltype(&T::operator()), &T::operator()>;
