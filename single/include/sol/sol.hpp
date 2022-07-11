@@ -27,6 +27,9 @@
 #ifndef SOL_SINGLE_INCLUDE_HPP
 #define SOL_SINGLE_INCLUDE_HPP
 
+// (hilkojj) including <limits.h> does not work, must be <limits>. https://www.gnu.org/software/gcc/gcc-11/porting_to.html#:~:text=Header%20dependency%20changes
+#include <limits>
+
 // beginning of sol/sol.hpp
 
 #ifndef SOL_HPP
