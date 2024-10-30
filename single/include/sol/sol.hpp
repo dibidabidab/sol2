@@ -29,6 +29,8 @@
 
 // (hilkojj) including <limits.h> does not work, must be <limits>. https://www.gnu.org/software/gcc/gcc-11/porting_to.html#:~:text=Header%20dependency%20changes
 #include <limits>
+// (hilkojj) emscripten started complaining about missing unordered_map>
+#include <unordered_map>
 
 // beginning of sol/sol.hpp
 
